@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "3f1ff72c-765f-471a-8e77-a4b5ff47a3be",
+		"name": "week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有清單",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://polar-falls-60618.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-falls-60618",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更改清單",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"測試員11\",\n    \"content\": \"...\"\n}"
+				},
+				"url": {
+					"raw": "https://polar-falls-60618.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-falls-60618",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有清單",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"吃早餐\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-falls-60618.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-falls-60618",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單一清單",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"吃早餐2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-falls-60618.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-falls-60618",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯待理代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"測試改名\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-falls-60618.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-falls-60618",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
